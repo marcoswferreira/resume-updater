@@ -17,7 +17,7 @@ Este diretório contém guias práticos, playbooks de aplicação para vagas de 
 ## ⚡ Como o Ecossistema Funciona
 
 ```
-marcoswferreira/
+resume-updater/
 ├── .agent/skills/              # 12 AI Skills prontas para uso no chat
 ├── .github/workflows/          # Automação de compilação de PDFs via GitHub Actions
 ├── curriculum/
