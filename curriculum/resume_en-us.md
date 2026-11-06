@@ -8,19 +8,20 @@ Tremembé, São Paulo, Brazil • <marcosfw7@outlook.com> • +55 (12) 99183-684
 
 ## Professional Summary
 
-Backend Software Engineer with 4+ years of professional experience architecting, building, and operating distributed systems and high-throughput financial platforms in mission-critical, regulated environments. Deep expertise in enterprise payment systems (Pix, dynamic Pix QR Codes, PayIn/Payout engines, and core banking integrations with Matera), ensuring transactional consistency under concurrency through idempotency, distributed locks, asynchronous queues, and retry mechanisms. Demonstrated track record across global enterprises and public institutions (Western Union, GFT Technologies, and the Rio de Janeiro State Court of Justice via Basis), slashing database query latency from 8s to 600ms and operational turnaround times by up to 73%. Specialized in C# (.NET Core), Java (Spring Boot), Azure cloud-native architectures, and test automation (TDD, integration, and E2E testing).
+Backend Software Engineer with 4+ years of professional experience architecting, building, and operating distributed systems and high-throughput financial platforms in mission-critical, regulated environments. Deep expertise in enterprise payment systems (Pix, dynamic Pix QR Codes, PayIn/Payout engines, and core banking integrations with Matera), ensuring transactional consistency under concurrency through idempotency, distributed locks, event-driven queues, and retry mechanisms. Demonstrated track record across global enterprises and public institutions (Western Union, GFT Technologies, and the Rio de Janeiro State Court of Justice via Basis), slashing database query latency from 8s to 600ms and operational turnaround times by up to 73%. Specialized in C# (.NET 8+ / ASP.NET Core), Java (Spring Boot), Azure cloud-native architectures, and test automation (TDD, integration, and E2E testing).
 
 ---
 
 ## Technical Skills
 
-- **Languages:** C# (.NET Core / .NET 8+), Java (11 / 17 / 21), TypeScript, JavaScript, SQL, Rust, Go
+- **Languages:** C# (.NET Core / .NET 8+), Java (11 / 17 / 21), TypeScript, JavaScript, SQL *(Familiar: Go, Rust, Python)*
 - **Frameworks & Runtimes:** ASP.NET Core, Spring Boot 3, Node.js, Angular, React, Electron
-- **Payments & Fintech:** Pix, Pix QR Code (Dynamic & Static), PayIn/Payout, Core Banking Integration (Matera), Idempotency, Distributed Locks, Message Queues, Retry Policies
-- **Architecture & Patterns:** Distributed Systems, Microservices, Domain-Driven Design (DDD), CQRS, Clean / Hexagonal Architecture, SOLID, TDD, Design Patterns
-- **Databases & Caching:** Oracle, Microsoft SQL Server, PostgreSQL, MongoDB, Redis
+- **Distributed Systems & Payments:** Pix, Pix QR Code (Dynamic & Static), PayIn/Payout, Core Banking Integration (Matera), Idempotency Patterns, Distributed Locks, Fault Tolerance, Event-Driven Architecture
+- **Messaging & Caching:** Azure Service Bus / RabbitMQ, Redis (Distributed Cache )
+- **Architecture & Patterns:** Microservices, Domain-Driven Design (DDD), CQRS, Clean / Hexagonal Architecture, SOLID, TDD, Design Patterns
+- **Databases:** Oracle, Microsoft SQL Server, PostgreSQL, MongoDB
 - **Cloud & DevOps:** Microsoft Azure, Docker, Azure DevOps, Jenkins, CloudBees, SonarQube, Bitbucket, Linux
-- **Testing & Quality:** xUnit, JUnit, Jasmine/Karma, Cypress, Selenium, Robot Framework, Automated Quality Gates
+- **Testing & Quality:** xUnit, JUnit, Jasmine/Karma, Cypress, Selenium, Automated Quality Gates
 
 ---
 
@@ -30,21 +31,21 @@ Backend Software Engineer with 4+ years of professional experience architecting,
 
 **April 2025 – Present | Rio de Janeiro, Brazil (Remote)**
 
-- Engineer and maintain mission-critical enterprise applications for the **Rio de Janeiro State Court of Justice (TJRJ)**, including Justice of the Peace governance and internship program management systems using Angular, C# ASP.NET Core, and Oracle.
-- Translate statutory and institutional judicial decrees into validated business domain rules, automated workflows, eligibility checks, and tenure duration validations.
-- Build high-reliability management and operational reports for the Human Resources division, ensuring regulatory compliance and audit readiness for monthly accountability submissions.
-- Guarantee end-to-end software quality across unit, integration, and E2E test suites using **xUnit, Jasmine/Karma, and Cypress**, maintaining **~80% code coverage**.
-- Ensure full compliance with strict contractual quality requirements and architectural documentation via continuous static analysis with **SonarQube** and automated CI/CD quality gates.
+- Architect and maintain mission-critical enterprise applications for the **Rio de Janeiro State Court of Justice (TJRJ)**, including Justice of the Peace governance and internship program management systems using Angular, C# ASP.NET Core, and Oracle.
+- Designed and implemented domain-specific business rule engines translating complex statutory decrees into automated validation workflows, eliminating manual verification overhead and ensuring strict audit compliance.
+- Developed high-reliability management and operational reports for the Human Resources division, ensuring regulatory compliance and audit readiness for monthly accountability submissions.
+- Established and enforced a multi-tier automated test strategy using **xUnit, Jasmine/Karma, and Cypress**, maintaining **~80% code coverage** and preventing regressions across judicial services.
+- Ensured full compliance with strict contractual quality requirements and architectural documentation via continuous static analysis with **SonarQube** and automated CI/CD quality gates.
 
 ### **Western Union** | *Software Engineer II*
 
 **September 2024 – April 2025 | São Paulo, Brazil**
 
 - Engineered and maintained high-throughput C#/.NET backend microservices for core financial rails: **Pix, Pix QR Code, PayIn, and Payout**, including direct core banking integration with **Matera**, handling thousands of daily transactions and peak traffic of **~40 req/s**.
-- Enforced strict transactional consistency and zero-loss guarantees under heavy concurrency through **idempotency keys, distributed locks, message queuing, and exponential backoff retry strategies**.
+- Enforced strict transactional consistency and zero-loss guarantees under heavy concurrency through **idempotency keys, Redis distributed locks, asynchronous message queues, and exponential backoff retry strategies**.
 - Built low-latency RESTful APIs and asynchronous background workers for reliable cross-system synchronization with external third parties, processing thousands of daily events.
 - Architected and automated microservice deployment pipelines with **Jenkins and CloudBees**, **reducing production rollback time from ~30 minutes to ~5 minutes** (83% faster recovery).
-- Developed cross-platform desktop automation tools using **ReactJS and ElectronJS**, **reducing average customer support handling time from ~15 minutes to ~4 minutes** (73% operational improvement).
+- Developed cross-platform desktop automation tools using **React and Electron**, **reducing average customer support handling time from ~15 minutes to ~4 minutes** (73% operational improvement).
 - Championed CI/CD engineering standards across squads: automated pull request validations, strict peer reviews, and automated release governance.
 
 ### **GFT Technologies** | *Backend Developer (L1 / L2 / Trainee)*
