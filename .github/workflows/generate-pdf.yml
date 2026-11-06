@@ -42,5 +42,5 @@ jobs:
         with:
           name: resumes-pdf
           path: |
-            curriculum/resume.pdf
-            curriculum/curriculo_pt.pdf
+            curriculum/resume_en-us.pdf
+            curriculum/resume_pt-br.pdf

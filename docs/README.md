@@ -1,7 +1,5 @@
 # 📚 Central de Documentação & Skills
 
-Bem-vindo à documentação do repositório de carreira e perfil profissional de **Marcos W. Ferreira**.
-
 Este diretório contém guias práticos, playbooks de aplicação para vagas de alto nível (FAANG / Big Tech / Global Tech) e instruções de uso das ferramentas de IA integradas ao projeto.
 
 ---
@@ -23,10 +21,10 @@ marcoswferreira/
 ├── .agent/skills/              # 12 AI Skills prontas para uso no chat
 ├── .github/workflows/          # Automação de compilação de PDFs via GitHub Actions
 ├── curriculum/
-│   ├── resume.md               # Currículo Master em Inglês (FAANG-ready)
-│   ├── curriculo_pt.md         # Currículo Master em Português
-│   ├── resume.pdf              # PDF compilado automaticamente
-│   └── curriculo_pt.pdf        # PDF compilado automaticamente
+│   ├── resume_en-us.md         # Currículo Master em Inglês (FAANG-ready)
+│   ├── resume_pt-br.md         # Currículo Master em Português
+│   ├── resume_en-us.pdf        # PDF compilado automaticamente
+│   └── resume_pt-br.pdf        # PDF compilado automaticamente
 ├── docs/                       # Este diretório de documentação
 │   ├── README.md               # Índice da documentação
 │   ├── roadmap.md              # Roadmap de carreira e aplicação

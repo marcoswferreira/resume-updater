@@ -54,7 +54,7 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **1.1** | Avaliar formato, densidade de keywords e legibilidade para robôs | `resume-ats-optimizer` | Relatório de conformidade ATS e correções de formatação |
 | **1.2** | Transformar bullets passivos em impacto quantificado (Fórmula X-Y-Z) | `resume-bullet-writer`<br/>`resume-quantifier` | Bullets refinados com escala, latência, RPS e SLA |
-| **1.3** | Balancear System Design, profundidade de código e liderança técnica | `tech-resume-optimizer` | Currículo Master (`curriculum/resume.md`) |
+| **1.3** | Balancear System Design, profundidade de código e liderança técnica | `tech-resume-optimizer` | Currículo Master (`curriculum/resume_en-us.md`) |
 | **1.4** | Sincronizar o perfil do LinkedIn com o posicionamento do CV | `linkedin-profile-optimizer` | Headline, Sobre e Experiências do LinkedIn otimizados para busca |
 
 ---

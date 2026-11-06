@@ -2,10 +2,10 @@
 
 Repositório de gerenciamento, otimização e compilação automatizada de currículos (Inglês e Português) de **Marcos W. Ferreira**, integrado com **12 AI Agent Skills** voltadas para processos seletivos de alta exigência (Big Tech, FAANG e empresas globais).
 
-[![Resume (EN - Markdown)](https://img.shields.io/badge/Resume_(EN)-Markdown-007ACC?style=flat-square&logo=markdown&logoColor=white)](curriculum/resume.md)
-[![Resume (EN - PDF)](https://img.shields.io/badge/Resume_(EN)-PDF-E53935?style=flat-square&logo=adobeacrobatreader&logoColor=white)](curriculum/resume.pdf)
-[![Currículo (PT - Markdown)](https://img.shields.io/badge/Curr%C3%ADculo_(PT)-Markdown-2ea44f?style=flat-square&logo=markdown&logoColor=white)](curriculum/curriculo_pt.md)
-[![Currículo (PT - PDF)](https://img.shields.io/badge/Curr%C3%ADculo_(PT)-PDF-E53935?style=flat-square&logo=adobeacrobatreader&logoColor=white)](curriculum/curriculo_pt.pdf)
+[![Resume (EN - Markdown)](https://img.shields.io/badge/Resume_(EN)-Markdown-007ACC?style=flat-square&logo=markdown&logoColor=white)](curriculum/resume_en-us.md)
+[![Resume (EN - PDF)](https://img.shields.io/badge/Resume_(EN)-PDF-E53935?style=flat-square&logo=adobeacrobatreader&logoColor=white)](curriculum/resume_en-us.pdf)
+[![Currículo (PT - Markdown)](https://img.shields.io/badge/Curr%C3%ADculo_(PT)-Markdown-2ea44f?style=flat-square&logo=markdown&logoColor=white)](curriculum/resume_pt-br.md)
+[![Currículo (PT - PDF)](https://img.shields.io/badge/Curr%C3%ADculo_(PT)-PDF-E53935?style=flat-square&logo=adobeacrobatreader&logoColor=white)](curriculum/resume_pt-br.pdf)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Marcos_W._Ferreira-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcoswferreira)
 
 ---
@@ -14,7 +14,7 @@ Repositório de gerenciamento, otimização e compilação automatizada de curr�
 
 Este projeto combina **Currículo como Código (Resume-as-Code)** com um ecossistema de **Skills de Inteligência Artificial** para cobrir todas as etapas de evolução de carreira:
 
-1. **Fonte Única da Verdade em Markdown:** Currículos mantidos em Markdown limpo e versionado via Git ([`curriculum/resume.md`](curriculum/resume.md) e [`curriculum/curriculo_pt.md`](curriculum/curriculo_pt.md)).
+1. **Fonte Única da Verdade em Markdown:** Currículos mantidos em Markdown limpo e versionado via Git ([`curriculum/resume_en-us.md`](curriculum/resume_en-us.md) e [`curriculum/resume_pt-br.md`](curriculum/resume_pt-br.md)).
 2. **Geração Automatizada de PDF (Local & CI/CD):** Conversão de Markdown para PDF formato A4 com tipografia executiva e compatível com sistemas ATS via **Marked** + **Puppeteer** ([`scripts/generate-pdf.mjs`](scripts/generate-pdf.mjs)) e **GitHub Actions** ([`.github/workflows/generate-pdf.yml`](.github/workflows/generate-pdf.yml)).
 3. **12 Skills de IA Integradas:** Conjunto de skills em [`.agent/skills/`](.agent/skills/) para auditoria ATS, reescrita de bullets (fórmula X-Y-Z), adaptação cirúrgica por vaga, preparação de entrevistas (STAR / System Design), otimização de LinkedIn e negociação salarial.
 
@@ -42,10 +42,10 @@ resume-updater/
 │   └── workflows/
 │       └── generate-pdf.yml        # Pipeline CI/CD para gerar e commitar os PDFs
 ├── curriculum/
-│   ├── resume.md                   # Currículo Master em Inglês
-│   ├── resume.pdf                  # PDF gerado automaticamente (EN)
-│   ├── curriculo_pt.md             # Currículo Master em Português
-│   └── curriculo_pt.pdf            # PDF gerado automaticamente (PT-BR)
+│   ├── resume_en-us.md             # Currículo Master em Inglês
+│   ├── resume_en-us.pdf            # PDF gerado automaticamente (EN)
+│   ├── resume_pt-br.md             # Currículo Master em Português
+│   └── resume_pt-br.pdf            # PDF gerado automaticamente (PT-BR)
 ├── docs/
 │   ├── README.md                   # Central de documentação
 │   ├── roadmap.md                  # Roadmap de aplicação em 5 fases (FAANG / Global Tech)
@@ -72,7 +72,7 @@ npm install
 
 ### 2. Gerar os PDFs localmente
 
-Sempre que atualizar [`curriculum/resume.md`](curriculum/resume.md) ou [`curriculum/curriculo_pt.md`](curriculum/curriculo_pt.md), execute:
+Sempre que atualizar [`curriculum/resume_en-us.md`](curriculum/resume_en-us.md) ou [`curriculum/resume_pt-br.md`](curriculum/resume_pt-br.md), execute:
 
 ```bash
 npm run build:pdf
@@ -81,7 +81,7 @@ npm run build:pdf
 O script [scripts/generate-pdf.mjs](scripts/generate-pdf.mjs) irá:
 - Remover blocos visuais exclusivos do GitHub (como o seletor de idiomas em HTML);
 - Converter o Markdown para HTML estilizado com CSS otimizado para impressão A4;
-- Renderizar via **Puppeteer** os arquivos [`curriculum/resume.pdf`](curriculum/resume.pdf) e [`curriculum/curriculo_pt.pdf`](curriculum/curriculo_pt.pdf).
+- Renderizar via **Puppeteer** os arquivos [`curriculum/resume_en-us.pdf`](curriculum/resume_en-us.pdf) e [`curriculum/resume_pt-br.pdf`](curriculum/resume_pt-br.pdf).
 
 ### 3. Automação via GitHub Actions
 

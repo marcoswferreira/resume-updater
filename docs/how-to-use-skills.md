@@ -29,9 +29,9 @@ Como as skills estão nativamente registradas no seu workspace, basta conversar 
 
 - **Quando usar:** Quando quiser avaliar o equilíbrio do currículo entre decisões técnicas profundas e impacto para o negócio.
 - **Como acionar (Exemplos de Prompts):**
-  - *"Avalie meu resume.md com a skill tech-resume-optimizer e aponte se minha stack e senioridade estão evidentes para um Hiring Manager."*
+  - *"Avalie meu resume_en-us.md com a skill tech-resume-optimizer e aponte se minha stack e senioridade estão evidentes para um Hiring Manager."*
   - *"Como posso destacar melhor minhas decisões de System Design e resiliência no currículo?"*
-- **Entrada necessária:** O arquivo [curriculum/resume.md](curriculum/resume.md).
+- **Entrada necessária:** O arquivo [curriculum/resume_en-us.md](curriculum/resume_en-us.md) (ou a versão em português [curriculum/resume_pt-br.md](curriculum/resume_pt-br.md)).
 - **O que a skill entrega:** Diagnóstico de profundidade técnica, estrutura de seções recomendada para tech recruiters e sugestões de links técnicos.
 
 ---
@@ -42,7 +42,7 @@ Como as skills estão nativamente registradas no seu workspace, basta conversar 
 
 - **Quando usar:** Antes de enviar o currículo para grandes empresas que utilizam triagem automatizada.
 - **Como acionar:**
-  - *"Execute uma auditoria de ATS no meu curriculum/resume.md usando a skill resume-ats-optimizer."*
+  - *"Execute uma auditoria de ATS no meu curriculum/resume_en-us.md usando a skill resume-ats-optimizer."*
   - *"Verifique se há alguma formatação ou cabeçalho no meu currículo que quebra em robôs de ATS."*
 - **Entrada necessária:** O currículo em Markdown.
 - **O que a skill entrega:** Checklist de compatibilidade de ATS, análise de densidade de palavras-chave e verificação de layout.
@@ -81,7 +81,7 @@ Como as skills estão nativamente registradas no seu workspace, basta conversar 
 
 - **Quando usar:** Sempre que for aplicar para uma vaga prioritária (ex: Stripe, Nubank, Amazon, Mercado Livre).
 - **Como acionar:**
-  - *"Adapte meu curriculum/resume.md para esta vaga de Senior Backend na Stripe usando a skill resume-tailor: [colar texto da vaga]."*
+  - *"Adapte meu curriculum/resume_en-us.md para esta vaga de Senior Backend na Stripe usando a skill resume-tailor: [colar texto da vaga]."*
   - *"Crie uma versão do meu currículo dando ênfase total em C# e Azure para a vaga X."*
 - **Entrada necessária:** O currículo base e a descrição completa da vaga.
 - **O que a skill entrega:** Reorganização estratégica de tópicos, resumo profissional alinhado aos desafios da empresa e destaque das keywords exigidas.
@@ -107,7 +107,7 @@ Como as skills estão nativamente registradas no seu workspace, basta conversar 
 
 - **Quando usar:** Periodicamente para atrair recrutadores internacionais de forma passiva.
 - **Como acionar:**
-  - *"Use a skill linkedin-profile-optimizer para sugerir uma Headline e um Sobre para o meu LinkedIn com base no meu resume.md."*
+  - *"Use a skill linkedin-profile-optimizer para sugerir uma Headline e um Sobre para o meu LinkedIn com base no meu resume_en-us.md."*
   - *"Como posso otimizar a seção de experiências do meu LinkedIn para ser encontrado em buscas por 'Senior Backend C# .NET Java'?"*
 - **Entrada necessária:** Seções atuais do seu perfil ou o próprio currículo.
 - **O que a skill entrega:** Headlines focadas em palavras de busca de tech recruiters, resumo conversacional em primeira pessoa e estrutura de tópicos para o LinkedIn.
@@ -159,7 +159,7 @@ Como as skills estão nativamente registradas no seu workspace, basta conversar 
 
 - **Quando usar:** Em aplicações internacionais (EUA/Europa) que solicitam uma Cover Letter opcional ou obrigatória.
 - **Como acionar:**
-  - *"Crie uma cover letter concisa para a vaga [anúncio] usando meu resume.md com a skill cover-letter-generator."*
+  - *"Crie uma cover letter concisa para a vaga [anúncio] usando meu resume_en-us.md com a skill cover-letter-generator."*
 - **Entrada necessária:** Job description e currículo.
 - **O que a skill entrega:** Carta personalizada de 300-400 palavras que explica o "Por que você?", "Por que esta empresa?" e "Por que agora?".
 

@@ -136,8 +136,8 @@ async function main() {
   });
 
   try {
-    await convertFile(browser, 'curriculum/resume.md', 'curriculum/resume.pdf');
-    await convertFile(browser, 'curriculum/curriculo_pt.md', 'curriculum/curriculo_pt.pdf');
+    await convertFile(browser, 'curriculum/resume_en-us.md', 'curriculum/resume_en-us.pdf');
+    await convertFile(browser, 'curriculum/resume_pt-br.md', 'curriculum/resume_pt-br.pdf');
     console.log('All PDFs successfully generated!');
   } finally {
     await browser.close();
