@@ -5,4 +5,3 @@ node_modules/
 *.pdf
 !curriculum/resume.pdf
 !curriculum/curriculo_pt.pdf
-*.agent
