@@ -19,7 +19,7 @@ const resumeContent = fs.readFileSync(resumePath, 'utf-8');
 const headlineMatch = resumeContent.match(/\*\*(Backend Software Engineer[^*]+)\*\*/i);
 const headline = headlineMatch
   ? headlineMatch[1].trim()
-  : 'Backend Software Engineer | Distributed Systems & Regulated Payments';
+  : 'Backend Software Engineer | Distributed Systems in Regulated Environments';
 
 // Parse Professional Summary
 const summaryMatch = resumeContent.match(/## Professional Summary\s+([\s\S]+?)(?=\n---|\n##)/i);
