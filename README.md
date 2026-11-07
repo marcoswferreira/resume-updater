@@ -40,7 +40,8 @@ resume-updater/
 │       └── tech-resume-optimizer/
 ├── .github/
 │   └── workflows/
-│       └── generate-pdf.yml        # Pipeline CI/CD para gerar e commitar os PDFs
+│       ├── generate-pdf.yml        # Pipeline CI/CD para gerar e commitar os PDFs
+│       └── sync-profile.yml        # Pipeline CI/CD para sincronizar o perfil no GitHub
 ├── curriculum/
 │   ├── resume_en-us.md             # Currículo Master em Inglês
 │   ├── resume_en-us.pdf            # PDF gerado automaticamente (EN)
@@ -51,7 +52,8 @@ resume-updater/
 │   ├── roadmap.md                  # Roadmap de aplicação em 5 fases (FAANG / Global Tech)
 │   └── how-to-use-skills.md        # Guia prático de prompts e uso das 12 skills
 ├── scripts/
-│   └── generate-pdf.mjs            # Script Node.js + Puppeteer para renderização dos PDFs
+│   ├── generate-pdf.mjs            # Script Node.js + Puppeteer para renderização dos PDFs
+│   └── sync-profile.mjs            # Sincronizador dinâmico do README para marcoswferreira/marcoswferreira
 └── package.json
 ```
 
@@ -84,8 +86,18 @@ O script [scripts/generate-pdf.mjs](scripts/generate-pdf.mjs) irá:
 - Renderizar via **Puppeteer** os arquivos [`curriculum/resume_en-us.pdf`](curriculum/resume_en-us.pdf) e [`curriculum/resume_pt-br.pdf`](curriculum/resume_pt-br.pdf).
 
 ### 3. Automação via GitHub Actions
+ 
+Ao fazer push na branch `main` alterando arquivos em `curriculum/**.md` ou `scripts/**`:
+- O workflow [`.github/workflows/generate-pdf.yml`](.github/workflows/generate-pdf.yml) compila automaticamente os novos PDFs, faz o commit de volta no repositório e publica os artefatos da execução.
+- O workflow [`.github/workflows/sync-profile.yml`](.github/workflows/sync-profile.yml) extrai o resumo e métricas de [`curriculum/resume_en-us.md`](curriculum/resume_en-us.md) e atualiza o `README.md` do repositório de perfil pessoal [`marcoswferreira/marcoswferreira`](https://github.com/marcoswferreira/marcoswferreira) via Personal Access Token (`PROFILE_SYNC_PAT`).
 
-Ao fazer push na branch `main` alterando arquivos em `curriculum/**.md` ou `scripts/**`, o workflow [`.github/workflows/generate-pdf.yml`](.github/workflows/generate-pdf.yml) compila automaticamente os novos PDFs, faz o commit de volta no repositório e publica os artefatos da execução.
+### 4. Gerar preview do README de perfil localmente
+
+```bash
+npm run sync:profile
+```
+
+Gera uma prévia formatada em `profile/README.md`.
 
 ---
 

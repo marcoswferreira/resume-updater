@@ -4,7 +4,8 @@
   "description": "Marcos W. Ferreira Profile and Automated Resume PDF Generator",
   "type": "module",
   "scripts": {
-    "build:pdf": "node scripts/generate-pdf.mjs"
+    "build:pdf": "node scripts/generate-pdf.mjs",
+    "sync:profile": "node scripts/sync-profile.mjs"
   },
   "devDependencies": {
     "marked": "^15.0.7",
